@@ -79,8 +79,9 @@
 | # | 锚点 | 小节 |
 | --- | --- | --- |
 | 01 | `at-a-glance` | 关键数据 |
-| 02 | `map` | 分区导航 |
-| 03 | `reading` | 关于这座站点 |
+| 02 | `timeline` | 大学四年时间轴 |
+| 03 | `map` | 分区导航 |
+| 04 | `reading` | 关于这座站点 |
 
 ### 个人档案 `sections/profile/`
 `basic` 基本信息 · `education` 教育背景与主修课程 · `certs` 技能与证书 · `self` 材料中的自我描述 · `privacy` 关于隐私（提示块，不进导航）
