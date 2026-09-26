@@ -114,8 +114,8 @@ function renderSidebar(activeSectionId, depth, subBlocks) {
   <nav class="sidebar__nav">${groupsHtml}</nav>
   <div class="sidebar__foot">
     <div>北京信息科技大学 · 计算机学院</div>
-    <div>内容依据 <strong>${esc(site.updated)}</strong> 归档材料整理</div>
-    <div>全部内容 100% 来自可核验材料</div>
+    <div>内容持续更新 · <strong>${esc(site.updated)}</strong></div>
+    <div>基于真实学习与生活经历整理</div>
   </div>
 </aside>`;
 }
@@ -150,9 +150,9 @@ function renderSearchBox(depth) {
 function renderFoot(depth) {
   const p = urlPrefix(depth);
   return `<footer class="site-foot">
-  <div>© <span data-year>2026</span> 刘家梁 · 本站内容来自本人学习与生活材料的整理，全部真实，不含虚构。</div>
-  <div>本站为静态站点，源码与内容数据存放于 <a href="https://github.com/EighteenLiu/EighteenLiu.github.io" target="_blank" rel="noopener">GitHub 仓库</a>。</div>
-  <div><a href="${p}index.html">返回总览</a> · <a href="${p}sections/sources/index.html">资料来源与真实性与隐私说明</a></div>
+  <div>© <span data-year>2026</span> 刘家梁 · 记录真实经历，持续更新。</div>
+  <div>源码与内容数据存放于 <a href="https://github.com/EighteenLiu/EighteenLiu.github.io" target="_blank" rel="noopener">GitHub 仓库</a>。</div>
+  <div><a href="${p}index.html">返回总览</a> · <a href="${p}sections/sources/index.html">关于博客</a></div>
 </footer>`;
 }
 
@@ -227,7 +227,7 @@ function renderBlock(block) {
       return sectionWrap(
         block,
         `<ol class="timeline">${block.items
-          .map((i) => `<li><div class="tl-date">${esc(i.date)}</div><div class="tl-title">${i.title}</div><p class="tl-desc">${i.desc}</p>${i.source ? `<span class="src">来源：${esc(i.source)}</span>` : ""}</li>`)
+          .map((i) => `<li><div class="tl-date">${esc(i.date)}</div><div class="tl-title">${i.title}</div><p class="tl-desc">${i.desc}</p></li>`)
           .join("")}</ol>`
       );
     case "table":
@@ -247,7 +247,7 @@ function renderBlock(block) {
             (c) => `<article class="card"><h3 class="card__title">${c.title}</h3>${c.sub ? `<p class="card__sub">${esc(c.sub)}</p>` : ""}
 ${c.html || ""}
 ${c.tags ? `<div class="tags" style="margin-top:12px;">${c.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
-${c.source ? `<span class="src">来源：${esc(c.source)}</span>` : ""}</article>`
+</article>`
           )
           .join("")}</div>`
       );
@@ -349,7 +349,7 @@ function buildPosts() {
       (p) => `<a class="entry" href="${p.slug}/index.html"><span class="entry__no">${esc(p.date)}</span><h3 class="entry__title">${esc(p.title)}</h3><p class="entry__desc">${esc(p.summary)}</p></a>`
     )
     .join("")}</div>
-<div class="pager"><a class="prev" href="../index.html"><span>返回</span>站点总览</a><a class="next" href="../sections/sources/index.html"><span>继续</span>资料来源与说明</a></div>
+<div class="pager"><a class="prev" href="../index.html"><span>返回</span>站点总览</a><a class="next" href="../sections/sources/index.html"><span>继续</span>关于博客</a></div>
 ${renderFoot(1)}`;
 
   write(
@@ -399,7 +399,7 @@ function build404() {
   <h1 class="page-title">没有找到这个页面</h1>
   <p class="page-lede">你访问的地址不存在，可能是链接已经调整。可以从左侧分区导航继续浏览，或回到站点总览。</p>
 </div>
-<div class="pager"><a class="prev" href="/index.html"><span>返回</span>站点总览</a><a class="next" href="/sections/sources/index.html"><span>查看</span>资料索引</a></div>
+<div class="pager"><a class="prev" href="/index.html"><span>返回</span>站点总览</a><a class="next" href="/sections/sources/index.html"><span>查看</span>关于博客</a></div>
 ${renderFoot(0)}`;
   write("404.html", pageShell({ depth: 0, title: "页面不存在 · 刘家梁个人档案", desc: "页面不存在。", activeSectionId: "overview", subBlocks: [], crumbs: [], bodyHtml: body, robots: "noindex, follow" }));
 }
