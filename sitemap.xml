@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>/</loc>
-    <lastmod>2023-07-01T16:36:47+08:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-07-01T16:36:47+08:00</lastmod>
-  </url><url>
-    <loc>/posts/theproblems/</loc>
-    <lastmod>2023-07-01T16:36:47+08:00</lastmod>
-  </url><url>
-    <loc>/posts/myfirstblog/</loc>
-    <lastmod>2023-07-01T16:30:22+08:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-  </url><url>
-    <loc>/tags/</loc>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://eighteenliu.github.io/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+<url><loc>https://eighteenliu.github.io/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/profile/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/academics/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/skills/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/projects/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/honors/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/leadership/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/media/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/campus/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/gallery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/future/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/sources/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/posts/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/sections/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/posts/myfirstblog/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://eighteenliu.github.io/posts/theproblems/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
